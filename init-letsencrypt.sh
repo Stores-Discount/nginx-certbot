@@ -58,7 +58,7 @@ case "$email" in
 esac
 
 # Enable staging mode if needed
-read -p "Are you testing your setup to avoid hitting request limits (Y/N) " staging
+read -p "Are you testing your setup to avoid hitting request limits? (Y/N) " staging
   if [ "$staging" != "N" ] && [ "$staging" != "n" ]; then
     staging_arg="--staging"
   fi

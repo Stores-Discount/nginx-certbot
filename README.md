@@ -35,6 +35,8 @@ sed "s/__DOMAIN_NAME__/$OS_DOMAIN/g" template/nginx/template.conf > data/nginx/$
 
 4. Run init the script:
 
+:pill: I highly recommend you to launch this script in staging mode for the first time to avoid hitting request limits
+
 ```
 chmod +x ./init-letsencrypt.sh
 ./init-letsencrypt.sh $OS_DOMAIN
